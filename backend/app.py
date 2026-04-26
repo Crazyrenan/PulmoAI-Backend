@@ -12,7 +12,9 @@ import keras
 from PIL import Image
 from sqlalchemy.orm import Session
 from dotenv import load_dotenv
-
+import base64
+import tensorflow as tf
+import matplotlib.pyplot as plt
 import models
 from database import engine, get_db
 
