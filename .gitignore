@@ -1,0 +1,75 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# =========================
+# Virtual Environment
+# =========================
+env/
+venv/
+.venv/
+tb-env/
+.env/
+
+# =========================
+# Jupyter / Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Python Build / Packaging
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Model Files (OPTIONAL)
+# =========================
+# Kalau model besar dan tidak mau push ke GitHub
+model/
+*.h5
+*.keras
+*.pt
+
+# =========================
+# Cache / Temp
+# =========================
+.cache/
+tmp/
+temp/
+
+# =========================
+# TensorFlow
+# =========================
+*.pb
+*.ckpt
+checkpoint
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
