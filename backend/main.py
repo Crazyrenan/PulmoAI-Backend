@@ -19,8 +19,8 @@ app.add_middleware(
 )
 
 app.include_router(auth.router, tags=["Authentication"])
-app.include_router(prediction.router, tags=["Prediction"])
+app.include_router(prediction.router, tags=["Prediction"])  
 
 @app.on_event("startup")
 def startup_event():
-    prediction.load_model()
+    prediction.load_model()  
