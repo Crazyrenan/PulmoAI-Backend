@@ -138,6 +138,7 @@ async def get_scan_history(token: str = Depends(oauth2_scheme), db: Session = De
             } for scan in scans
         ]
     }
+
 @router.post("/predict")
 async def predict(file: UploadFile = File(...), token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
     try:
