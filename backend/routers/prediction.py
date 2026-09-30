@@ -188,7 +188,7 @@ async def predict(file: UploadFile = File(...), user=Depends(get_current_user), 
     classes = ["health", "sick", "tb"]
 
     new_scan = models.ScanRecord(
-        user_id=user.id,                          # ✅ from dependency
+        user_id=user.id,                          
         original_filename=file.filename,
         raw_image_path=raw_path.replace("\\", "/"),
         gradcam_image_path=gradcam_path.replace("\\", "/"),
@@ -205,6 +205,6 @@ async def predict(file: UploadFile = File(...), user=Depends(get_current_user), 
         "confidence": float(probs[idx]),
         "probabilities": probs,
         "gradcam_image": f"data:image/jpeg;base64,{gradcam_b64}" if gradcam_b64 else None,
-        "user": user.username,                    # ✅ from dependency
+        "user": user.username,                    
         "scan_id": new_scan.id
     }
